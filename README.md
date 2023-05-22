@@ -13,15 +13,20 @@ Si desea utilizar un directorio diferente en su máquina host, como temp/my-data
 
 ![tolerante1](https://github.com/srqsev/proyecto-tolerante/assets/11024621/647e37f9-30d4-4442-972e-e42da4be3ecc)
 
+![image](https://github.com/srqsev/proyecto-tolerante/assets/11024621/614c71ed-62bf-4736-8494-bf42c705e73e)
+
+![image](https://github.com/srqsev/proyecto-tolerante/assets/11024621/2468d8f0-c442-4282-abd1-0aca1592b327)
+
+
+Además de esto también podemos meterla en otro puerto y todo funcionará correctamente
+![image](https://github.com/srqsev/proyecto-tolerante/assets/11024621/b35d34bc-8a50-4b7d-a363-841620a1b39f)
+
+
+![GIF 5-22-2023 12-13-50 AM](https://github.com/srqsev/proyecto-tolerante/assets/11024621/6cf226f2-0dc1-4fd6-a4f4-6515635320ee)
 
 
 
-
-
-Volúmenes:
-
-temp/mis-datos/:/usr/share/nginx/html/
-No se necesita especificar nada en la sección de volúmenes en la parte inferior del archivo, a menos que desee usar un volumen con nombre en lugar de un montaje de enlace.
+También al crear una imágen con Docker estamos respaldando la información de nuestro proyecto, por lo tanto es más segura y confiable
 
 ## Conclusión
 
