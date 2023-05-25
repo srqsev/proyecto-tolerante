@@ -28,6 +28,26 @@ Además de esto también podemos meterla en otro puerto y todo funcionará corre
 
 También al crear una imágen con Docker estamos respaldando la información de nuestro proyecto, por lo tanto es más segura y confiable
 
+
+Actualización:
+Al hacer la observación la semana anterior para crear un balanceador lo que hice en un config crear un grupo ascendente llamado myappl que consta de tres servidores: 172.18.0.2, 172.18.0.3 y 172.18.0.4.
+De forma predeterminada, utiliza el método de balanceo de carga por turnos, que distribuye las solicitudes de manera uniforme entre los servidores del grupo1.
+Se basa en el puerto 80 y envía todas las solicitudes al grupo myappl usando la directiva proxy_pass1.
+También define una ubicación especial /serv2/ que reescribe el URI de solicitud y lo envía a un servidor específico: 172.18.0.3.
+
+
+![image](https://github.com/srqsev/proyecto-tolerante/assets/11024621/73e2266f-8f64-492f-9de2-81a911a21cd3)
+
+
+
+
+Funcionando 
+
+![Untitled video - Made with Clipchamp](https://github.com/srqsev/proyecto-tolerante/assets/11024621/7b56e7a2-11c0-4740-b39d-9d21a689c04a)
+
+
+
+
 ## Conclusión
 
 En conclusión, Docker es una herramienta muy útil para crear y desplegar contenedores que pueden ejecutar tus aplicaciones de forma eficiente y consistente en diferentes entornos. Para hacer tu proyecto tolerante a fallos, puedes usar técnicas como el clúster de contenedores, la simulación de fallos y la arquitectura de microservicios, que te permiten mejorar la disponibilidad, la resiliencia y la escalabilidad de tu sistema. Docker también se puede integrar con otras herramientas y plataformas que facilitan el desarrollo, el monitoreo y la gestión de tus contenedores. 
